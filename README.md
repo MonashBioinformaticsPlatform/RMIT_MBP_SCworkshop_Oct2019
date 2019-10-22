@@ -4,6 +4,10 @@ Links to resources from todays workshop.
 Slides: https://github.com/MonashBioinformaticsPlatform/RMIT_MBP_SCworkshop_Oct2019/blob/master/RMIT-MBP-SCworkshop-22Oct19.pdf
 
 
+If you don't have R-Studio and R installed, you can use RStudio Cloud:
+
+https://rstudio.cloud
+
 In R, install the required packages with:
 
 ```
