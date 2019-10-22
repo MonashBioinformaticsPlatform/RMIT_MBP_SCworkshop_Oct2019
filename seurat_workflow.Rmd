@@ -358,12 +358,17 @@ DoHeatmap(pbmc, features = top10$gene) + NoLegend()
 
 Fortunately in the case of this dataset, we can use canonical markers to easily match the unbiased clustering to known cell types:
 
-
-| Condition       | Replicate 1     | Replicate 2     |
-|-----------------|-----------------|-----------------|
-| B184            | B184_VD1        | B184_VD2        |
-| BP9_VD2_CD27-hi | BP9_VD2_CD27-hi | BP9_VD2_CD27-lo |
-| T184            | T184_VD1        | T184_VD2        |
+| Cluster ID | Markers       | Cell Type    |
+|------------|---------------|--------------|
+| 0          | IL7R, CCR7    | Naive CD4+ T |
+| 1          | IL7R, S100A4  | Memory CD4+  |
+| 2          | CD14, LYZ     | CD14+ Mono   |
+| 3          | MS4A1         | B            |
+| 4          | CD8A          | CD8+ T       |
+| 5          | FCGR3A, MS4A7 | FCGR3A+ Mono |
+| 6          | GNLY, NKG7    | NK           |
+| 7          | FCER1A, CST3  | DC           |
+| 8          | PPBP          | Platelet     |
 
 ```{r}
 new.cluster.ids <- c("Naive CD4 T", "Memory CD4 T", "CD14+ Mono", "B", "CD8 T", "FCGR3A+ Mono", 
