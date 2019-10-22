@@ -6,11 +6,14 @@ Slides: https://github.com/MonashBioinformaticsPlatform/RMIT_MBP_SCworkshop_Oct2
 
 In R, install the required packages with:
 
-`install.packages(c("Seurat", "dplyr"))`
+```
+install.packages(c("Seurat", "dplyr", "reticulate"))
+reticulate::py_install(packages = "umap-learn")
+```
 
 If you don't have Rmarkdown installed, install all of them with:
 
-`install.packages(c("Seurat", "dplyr", "rmarkdown"))`
+`install.packages(c("Seurat", "dplyr", "reticulate", "rmarkdown"))`
 
 
 Download raw data here:
